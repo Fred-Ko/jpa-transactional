@@ -1,0 +1,11 @@
+services:
+  db:
+    image: mysql:8.0.33
+    container_name: transactional_db
+    environment:
+      MYSQL_ROOT_PASSWORD: transactional
+      MYSQL_DATABASE: transactional
+      MYSQL_USER: transactional
+      MYSQL_PASSWORD: transactional
+    ports:
+      - "3306:3306"
